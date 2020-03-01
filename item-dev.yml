@@ -3,6 +3,7 @@ server:
 spring:
   application:
     name: item-service
+
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/leyou?characterEncoding=UTF-8&useSSL=false
     username: root
@@ -10,6 +11,7 @@ spring:
     hikari:
       maximum-pool-size: 20
       minimum-idle: 10
+
   redis:
     host: 127.0.0.1
   rabbitmq:
