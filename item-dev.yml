@@ -5,11 +5,9 @@ spring:
     name: item-service
 
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/leyou?serverTimezone=GMT%2B8&amp;useSSL=false
+    url: jdbc:mysql://127.0.0.1:3306/leyou?characterEncoding=UTF-8&useSSL=false
     username: root
     password: yeah999
-    driver: com.mysql.cj.jdbc.Driver
-    
     
     hikari:
       maximum-pool-size: 20
