@@ -35,7 +35,7 @@ eureka:
     lease-expiration-duration-in-seconds: 30 #10秒不发送九过期
     lease-renewal-interval-in-seconds: 5 #每隔5秒发一次心跳
     
-#配置熔断的时间监听
+#配置熔断的时间监听<Fred>
 hystrix:
   command:
     default:
@@ -43,4 +43,4 @@ hystrix:
         timeout:
           isolation:
             thread:
-              timeoutInMilliseconds: 1000
+              timeoutInMilliseconds: 5000
