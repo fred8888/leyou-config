@@ -34,3 +34,13 @@ eureka:
     ip-address: 127.0.0.1
     lease-expiration-duration-in-seconds: 30 #10秒不发送九过期
     lease-renewal-interval-in-seconds: 5 #每隔5秒发一次心跳
+    
+#配置熔断的时间监听
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          isolation:
+            thread:
+              timeoutInMilliseconds: 5000
