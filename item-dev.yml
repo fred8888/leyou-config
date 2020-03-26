@@ -46,6 +46,14 @@ ribbon:
   OkToRetryOnAllOperations: true # 是否对所有操作重试
   MaxAutoRetriesNextServer: 1 # 同一服务不同实例的重试次数
   MaxAutoRetries: 1 # 同一实例的重试次数
+  
+feign:
+  client:
+    config:
+      default:
+        connect-timeout: 20000
+        read-timeout: 20000
+        
 hystrix:
   command:
     default:
@@ -53,3 +61,6 @@ hystrix:
         isolation:
           thread:
             timeoutInMillisecond: 10000 # 熔断超时时长：10000ms
+            
+            
+            
